@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { MainComponent } from './componentes/main/main.component';
+import { IntroComponent } from './componentes/intro/intro.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'encabezado',component: EncabezadoComponent},
+  {path: 'footer',component: FooterComponent},
+  {path: 'intro',component: IntroComponent},
+  {path: 'main',component: MainComponent},
+  {path: '', redirectTo: 'intro',pathMatch: 'full'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
