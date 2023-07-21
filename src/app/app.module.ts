@@ -7,6 +7,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { IntroComponent } from './componentes/intro/intro.component';
 import { MainComponent } from './componentes/main/main.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { PrincipalComponent } from './componentes/principal/principal.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
     EncabezadoComponent,
     FooterComponent,
     IntroComponent,
-    MainComponent
+    MainComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
